@@ -3,6 +3,7 @@ import PetCard from './components/PetCard.js';
 import { PetDetails } from './components/PetDetails.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+import { IconPawFilled } from '@tabler/icons-react';
 
 function App() {
 
@@ -140,7 +141,7 @@ fetchImages();
   return (
       <Router>
         <div className="App">
-          <h1>Adopción de Mascotas</h1>
+          <h1><IconPawFilled /> PawPal <IconPawFilled /></h1>
           <Routes>
             <Route path="/pets/:id" element={<PetDetails />} />
             <Route path="/" element={
