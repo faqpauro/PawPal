@@ -68,5 +68,18 @@
     50% { opacity: 0.5; }
     100% { opacity: 1; }
   }
+
+  @media (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Una sola columna en dispositivos móviles */
+      gap: 10px;
+      padding: 0px;
+    }
+  
+    .pet-card {
+      max-width: 300px; /* O el ancho que prefieras */
+      margin: 0 auto; /* Centra la tarjeta en la columna */
+    }
+  }
   
   
