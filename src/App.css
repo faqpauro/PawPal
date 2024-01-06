@@ -1,5 +1,19 @@
+html, body, #root, .App {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+  background-image: url('../public/backgroundApp.jpg');
+  background-size: cover; /* Cubre todo el fondo */
+  background-position: center; /* Centra la imagen en el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+.App h1{
+  color: white;
+  margin-top: 10px; /* Reducir el margen superior */
+  margin-bottom: 10px; /* Reducir el margen inferior */
 }
 
 .App-logo {

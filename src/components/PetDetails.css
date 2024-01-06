@@ -1,0 +1,83 @@
+.card-pet {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #eaeaea;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0; /* Elimina los márgenes si los tiene */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    background-color: aliceblue;
+    max-height: 100vh; /* Altura máxima de la ventana del navegador */
+    overflow-y: auto;  /* Permite el desplazamiento interno si el contenido es demasiado largo */
+  }
+  .pet-image {
+    max-width: 100%;  /* Ancho máximo del contenedor */
+    max-height: 350px; /* Altura máxima */
+    width: auto;       /* Ancho automático (mantiene la relación de aspecto) */
+    height: auto;      /* Altura automática (mantiene la relación de aspecto) */
+    object-fit: contain; /* Asegura que la imagen se ajuste dentro de los límites sin cortarse */
+  }
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Espacio entre la imagen y la tabla */
+    background-color: white;
+  }
+  
+  table, th, td {
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Borde casi invisible */
+  }
+  
+  td {
+    padding: 8px; /* Espaciado dentro de las celdas */
+  }
+  
+  .button-back {
+    padding: 10px 15px;
+    background-color: #008CBA; /* Un color verde, puedes elegir el que prefieras */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-back:hover {
+    background-color: #007B9A; /* Un tono ligeramente más oscuro para el efecto hover */
+  }
+  
+  .button-adopt {
+    padding: 10px 15px;
+    background-color: #4CAF50; /* Un color azul, por ejemplo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Espacio entre los botones */
+    animation: titilar 1s linear infinite;
+  }
+  
+  .button-adopt:hover {
+    background-color: #45a049; /* Un tono más oscuro para el efecto hover */
+  }
+  
+
+  .adoptado {
+    color: red;
+  }
+  
+  .disponible {
+    color: green;
+  }
+  
+  @keyframes titilar {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+  
